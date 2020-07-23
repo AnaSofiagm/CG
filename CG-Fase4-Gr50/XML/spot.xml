@@ -1,0 +1,40 @@
+<scene>
+    <group>
+    	<lights>  
+        	<light type="SPOT" 		posX="0" posY="0" posZ="0"
+									dirX="1" dirY="0" dirZ="0"
+									cutoff="45" />
+    	</lights>
+        <group>
+        	<!-- O sol luz ambiente, especular e emissiva, 
+        	os planetas e luas luz ambiente, difusa(em tds direções) e especular(refelexão da luz)-->
+            <!-- Sol -->
+            <scale x="15" y="15" z="15" />
+            <models>
+                <model file="3Dfiles/esfera.3d" texture="textures/sol.jpg" 
+                diffR="1.0" diffG="0.8" diffB="0.0"
+                ambR="1.0" ambG="0.647" ambB="0.0"
+                emiR="1.0" emiG="1.0" emiB="1.0" />
+            </models>
+        </group>
+        <group>
+            <!-- Mercurio -->
+	    	<translate time="10" >
+				<point x="225" y="0" z="0" />
+				<point x="0" y="0" z="-225" />
+				<point x="-225" y="0" z="0" />
+				<point x="0" y="0" z="225" />
+	    	</translate>
+	    	<rotate time="10" x="0" y="1" z="0" />
+            <scale x="0.5" y="0.5" z="0.5"/>
+            <group>
+            	<scale x="10" y="10" z="10" />
+	            <models>
+					<model file="3Dfiles/esfera.3d" texture="textures/mercurio.jpg" diffR="0.941" diffG="0.902" diffB="0.549"
+					 ambR="0.741" ambG="0.718" ambB="0.420"
+					 espR="1.0" espG="1.0" espB="1.0"/>    
+				</models>
+			</group>
+        </group>
+    </group>
+</scene>

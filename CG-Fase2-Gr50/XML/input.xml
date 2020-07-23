@@ -1,0 +1,114 @@
+<scene>
+	<group>
+		<group>
+			<!-- Sol -->
+			<translate x="-5" y="0" z="0" />
+			<cor R="1.0" G="0.647" B="0" />
+			<scale x="25" y="25" z="25" />
+			<rotate x="0" y="0" z="0" angle="0" />
+			<models>
+				<model file="3Dfiles/sphere.3d"/>
+			</models>
+		</group>
+		<group>
+			<!-- Mercurio -->
+			<translate x="-100" y="0" z="0" />
+			<cor R="0.933" G="0.910" B="0.667" />
+			<scale x="0.3" y="0.3" z="0.3"/>
+			<rotate x="0" y="0" z="0" angle="0" />
+			<models>
+				<model file="3Dfiles/sphere.3d"/>
+			</models>
+		</group>
+		<group>
+			<!-- Venus -->
+			<translate x="-60" y="0" z="0" />
+			<cor R="0.941" G="0.973" B="1" />
+			<scale x="0.4" y="0.4" z="0.4"/>
+			<rotate x="0" y="0" z="0" angle="0" />
+			<models>
+				<model file="3Dfiles/sphere.3d"/>
+			</models>
+		</group>
+		<group>
+			<!-- Terra -->
+			<translate x="-15" y="0" z="0" />
+			<cor R="0.0" G="0.0" B="1" />
+			<scale x="1" y="1" z="1"/>
+			<rotate x="0" y="0" z="0" angle="0" />
+			<models>
+				<model file="3Dfiles/sphere.3d"/>
+			</models>
+			<group>
+				<!-- Lua -->
+				<translate x="5" y="25" z="2" />
+				<cor R="0.412" G="0.412" B="0.412" />
+				<scale x="0.2" y="0.2" z="0.2"/>
+				<rotate x="0" y="0" z="0" angle="0" />
+				<models>
+					<model file="3Dfiles/sphere.3d"/>
+				</models>
+			</group>
+		</group>
+		<group>
+			<!-- Marte -->
+			<translate x="-5" y="0" z="0" />
+			<cor R="0.698" G="0.133" B="0.133" />
+			<scale x="0.8" y="0.8" z="0.8"/>
+			<rotate x="0" y="0" z="0" angle="0" />
+			<models>
+				<model file="3Dfiles/sphere.3d" />
+			</models>
+		</group>
+		<group>
+			<!-- Jupiter -->
+			<translate x="4" y="0" z="0" />
+			<cor R="0.545" G="0.271" B="0.075" />
+			<scale x="6" y="6" z="6"/>
+			<rotate x="0" y="0" z="0" angle="0" />
+			<models>
+			<model file="3Dfiles/sphere.3d" />
+			</models>
+			<!-- Lua Júpiter -->
+			<group>
+				<translate x="8" y="40" z="5" />
+				<cor R="0.859" G="0.439" B="0.576" />
+				<scale x="0.1" y="0.1" z="0.1" />
+				<rotate x="0" y="0" z="0" angle="0" />
+				<models>
+					<model file="3Dfiles/sphere.3d" />
+				</models>
+			</group>
+		</group>
+		<group>
+			<!-- Saturno -->
+			<translate x="13" y="0" z="0" />
+			<cor R="0.855" G="0.647" B="0.125" />
+			<scale x="5" y="5" z="5"/>
+			<rotate x="0" y="0" z="0" angle="0" />
+			<models>
+				<model file="3Dfiles/sphere.3d" />
+			</models>
+		</group>
+		<group>
+			<!-- Urano -->
+			<translate x="46" y="0" z="0" />
+			<cor R="0.502" G="0.502" B="0" />
+			<scale x="2" y="2" z="2"/>
+			<rotate x="0" y="0" z="0" angle="0" />
+			<models>
+				<model file="3Dfiles/sphere.3d" />
+			</models>
+		</group>
+		<group>
+			<!-- Neptuno -->
+			<translate x="54" y="0" z="0" />
+			<cor R="0" G="1" B="1" />
+			<scale x="2" y="2" z="2"/>
+			<rotate x="0" y="0" z="0" angle="0" />
+			<models>
+				<model file="3Dfiles/sphere.3d" />
+			</models>
+		</group>
+	</group>
+</scene>

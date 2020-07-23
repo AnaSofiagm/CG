@@ -1,0 +1,180 @@
+<scene>
+    <group>
+    	<lights>  
+        	<light type="POINT" posX="0.0" posY="10.0" posZ="0.0" />
+    	</lights>
+        <group>
+        	<!-- O sol luz ambiente, especular e emissiva, 
+        	os planetas e luas luz ambiente, difusa(em tds direções) e especular(refelexão da luz)-->
+            <!-- Sol -->
+            <scale x="23" y="23" z="23" />
+            <models>
+                <model file="3Dfiles/esfera.3d" texture="textures/sol.jpg" 
+                diffR="1.0" diffG="0.8" diffB="0.0"
+                ambR="1.0" ambG="0.647" ambB="0.0"
+                emiR="1.0" emiG="1.0" emiB="1.0" />
+            </models>
+        </group>
+        <group>
+            <!-- Mercurio -->
+	    	<translate time="170" >
+				<point x="225" y="0" z="0" />
+				<point x="0" y="0" z="-225" />
+				<point x="-225" y="0" z="0" />
+				<point x="0" y="0" z="225" />
+	    	</translate>
+	    	<rotate time="10" x="0" y="1" z="0" />
+            <scale x="0.5" y="0.5" z="0.5"/>
+            <models>
+				<model file="3Dfiles/esfera.3d" texture="textures/mercurio.jpg" diffR="0.941" diffG="0.902" diffB="0.549"
+				 ambR="0.741" ambG="0.718" ambB="0.420"
+				 espR="1.0" espG="1.0" espB="1.0"/>    
+			</models>
+        </group>
+        <group>
+            <!-- Venus -->
+	    	<translate time="200" >
+				<point x="250" y="0" z="0" />
+				<point x="0" y="0" z="-250" />
+				<point x="-250" y="0" z="0" />
+				<point x="0" y="0" z="250" />
+	    	</translate>
+	        <rotate time="20" x="0" y="1" z="0" />
+            <scale x="0.5" y="0.5" z="0.5"/>
+            <models>
+                <model file="3Dfiles/esfera.3d" texture="textures/venus.jpg"  diffR="0.871" diffG="0.722" diffB="0.529"
+                ambR="0.855" ambG="0.647" ambB="0.125"
+                espR="1.0" espG="1.0" espB="1.0" />
+            </models>
+        </group>
+ 		<group>
+            <!-- Terra -->
+	    	<translate time="250" >
+				<point x="135" y="0" z="0" />
+				<point x="0" y="0" z="-135" />
+				<point x="-135" y="0" z="0" />
+				<point x="0" y="0" z="135" />
+	    	</translate>
+	        <rotate time="50" x="0" y="1" z="0" />
+            <scale x="1" y="1" z="1"/>
+            <models>
+				<model file="3Dfiles/esfera.3d" texture="textures/terra.jpg"  diffR="0.118" diffG="0.565" diffB="1.0"
+				ambR="0.0" ambG="0.0" ambB="1.0"
+				espR="1.0" espG="1.0" espB="1.0"  />   
+			</models>
+            <group>
+                <!-- Lua -->
+				<translate time="20" >
+					<point x="40" y="0" z="0" />
+					<point x="0" y="0" z="-40" />
+					<point x="-40" y="0" z="0" />
+					<point x="0" y="0" z="-40" />
+				</translate>
+			    <rotate time="80" x="0" y="1" z="0" />
+                <scale x="0.2" y="0.2" z="0.2"/>
+                <models>
+                   <model file="3Dfiles/esfera.3d" texture="textures/lua.jpg"  diffR="0.412" diffG="0.412" diffB="0.412"
+                   ambR="0.3" ambG="0.3" ambB="0.3"
+                   espR="1.0" espG="1.0" espB="1.0" />
+                </models>
+            </group>
+        </group>
+        <group>
+            <!-- Marte -->
+	    	<translate time="300" >
+				<point x="185" y="0" z="0" />
+				<point x="0" y="0" z="-185" />
+				<point x="-185" y="0" z="0" />
+				<point x="0" y="0" z="185" />
+	    	</translate>
+	        <rotate time="25" x="0" y="1" z="0" />
+            <scale x="0.8" y="0.8" z="0.8"/>
+            <models>
+				<model file="3Dfiles/esfera.3d" texture="textures/marte.jpg" 
+				diffR="0.698" diffG="0.133" diffB="0.133"
+				ambR="0.545" ambG="0.0" ambB="0.0" 
+				espR="1.0" espG="1.0" espB="1.0" />     
+	       </models>
+        </group>
+        <group>
+            <!-- Jupiter -->
+	    	<translate time="350" >
+				<point x="31" y="0" z="0" />
+				<point x="0" y="0" z="-31" />
+				<point x="-31" y="0" z="0" />
+				<point x="0" y="0" z="31" />
+	    	</translate>
+	        <rotate time="70" x="0" y="1" z="0" />
+            <scale x="6" y="6" z="6"/>
+            <models>
+                <model file="3Dfiles/esfera.3d" texture="textures/jupiter.jpg" diffR="0.804" diffG="0.522" diffB="0.247"
+                ambR="0.545" ambG="0.271" ambB="0.075" 
+                 espR="1.0" espG="1.0" espB="1.0"/>
+            </models>
+	    <!-- Lua Júpiter -->
+	    	<group>
+				<translate time="30" >
+		    		<point x="32" y="55" z="0" />
+		    		<point x="0" y="55" z="-32" />
+		    		<point x="-32" y="55" z="0" />
+		    		<point x="0" y="55" z="32" />
+				</translate>
+		        <rotate time="10" x="0" y="1" z="0" />
+				<scale x="0.08" y="0.08" z="0.08" />
+				<models>
+					<model file="3Dfiles/esfera.3d" texture="textures/lua.jpg"  diffR="0.859" diffG="0.439" diffB="0.576"
+						ambR="0.780" ambG="0.082" ambB="0.522"
+					 espR="1.0" espG="1.0" espB="1.0"/>
+				</models>
+	    	</group>
+        </group>
+        <group>
+            <!-- Saturno -->
+	    	<translate time="400" >
+				<point x="47" y="0" z="0" />
+				<point x="0" y="0" z="-47" />
+				<point x="-47" y="0" z="0" />
+				<point x="0" y="0" z="47" />
+	    	</translate>
+	        <rotate time="60" x="0" y="1" z="0" />
+            <scale x="5" y="5" z="5"/>
+            <models>
+                <model file="3Dfiles/esfera.3d" texture="textures/saturno.jpg" diffR="0.855" diffG="0.647" diffB="0.125"
+                	 ambR="0.722" ambG="0.525" ambB="0.043"
+                	 espR="1.0" espG="1.0" espB="1.0"/>
+            </models>
+        </group>
+        <group>
+            <!-- Urano -->
+	    	<translate time="450" >
+				<point x="135" y="0" z="0" />
+				<point x="0" y="0" z="-135" />
+				<point x="-135" y="0" z="0" />
+				<point x="0" y="0" z="135" />
+	    	</translate>
+	   	    <rotate time="40" x="0" y="1" z="0" />
+            <scale x="2" y="2" z="2"/>
+            <models>
+                <model file="3Dfiles/esfera.3d" texture="textures/urano.jpg" diffR="0.0" diffG="1.0" diffB="1.0"
+                ambR="0.0" ambG="0.545" ambB="0.545" 
+                espR="1.0" espG="1.0" espB="1.0"/>
+            </models>
+        </group>
+        <group>
+            <!-- Neptuno -->
+	    	<translate time="500" >
+				<point x="145" y="0" z="0" />
+				<point x="0" y="0" z="-145" />
+				<point x="-145" y="0" z="0" />
+				<point x="0" y="0" z="145" />
+	    	</translate>
+	        <rotate time="40" x="0" y="1" z="0" />
+            <scale x="2" y="2" z="2"/>
+            <models>
+                <model file="3Dfiles/esfera.3d" texture="textures/neptuno.jpg" diffR="0.0" diffG="0.0" diffB="1.0" 
+                ambR="0.0" ambG="0.0" ambB="0.502" 
+                espR="1.0" espG="1.0" espB="1.0"/>
+            </models>
+        </group>
+    </group>
+</scene>

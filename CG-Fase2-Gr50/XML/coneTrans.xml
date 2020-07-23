@@ -1,0 +1,43 @@
+<scene>
+	<group>
+		<group>
+			<!-- cone centrado -->
+			<cor R="1" G="0" B="0" />
+			<models>
+				<model file="3Dfiles/cone.3d"/>
+			</models>
+		</group>
+		<group>
+			<!-- deslocado e rodado -->
+			<translate x="0" y="-50" z="0" />
+			<cor R="0" G="0" B="1" />
+			<rotate x="0" y="0" z="1" angle="90" />
+			<models>
+				<model file="3Dfiles/cone.3d"/>
+			</models>
+		</group>
+		<group>
+			<!-- cone deslocado e com scale -->
+			<translate x="-50" y="0" z="0" />
+			<cor R="0" G="1" B="0" />
+			<scale x="0.5" y="0.5" z="0.5"/>
+			<rotate x="0" y="0" z="0" angle="0" />
+			<models>
+				<model file="3Dfiles/cone.3d"/>
+			</models>
+			<group>
+				<scale x="4" y="4" z="4" />
+				<translate x="0" y="50" z="0" />
+				<group>
+					<!-- deslocado e rodado -->
+					<translate x="0" y="0" z="0" />
+					<cor R="0" G="1" B="1" />
+					<rotate x="0" y="0" z="-1" angle="90" />
+					<models>
+						<model file="3Dfiles/cone.3d"/>
+					</models>
+				</group>
+			</group>
+		</group>
+	</group>
+</scene>
